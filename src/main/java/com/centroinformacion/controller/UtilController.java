@@ -92,4 +92,10 @@ public class UtilController {
 	public List<DataCatalogo> listaEstadoLibro() {
 		return dataCatalogoService.listaDataCatalogo(AppSettings.CATALOGO_08_ESTADO_DE_LIBRO);
 	}
+	
+	@GetMapping("/listaEstadoReserva")
+	@ResponseBody
+	public List<DataCatalogo> listaEstadoReserva() {
+		return dataCatalogoService.listaDataCatalogo(AppSettings.CATALOGO_09_ESTADO_DE_RESERVA);
+	}
 }
